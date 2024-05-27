@@ -15,8 +15,8 @@
 </head>
 <body>
     <div class="wrapper">  <! -- Header top  ->
-        <header class="header px-2">
-            <div class="header-top py-3">
+        <header class="header">
+            <div class="header-top py-3 px-3">
                 <div class="conteiner">
                     <div class="row">
                         <div class="col-6 col-sm-4">
@@ -89,56 +89,92 @@
                     </div>
                 </div>
             </div>
-        </header> <! -- Header top  ->
-
-        <div class="header-midle bg-white px-4 py-2">
-           <div class="conteiner-fluid">
-                <div class="row">
-
-                    <div class="col-6 col-md-4 d-flex align-items-center order-0 order-md-0">
-                        <a href="index.html" class="header-logo h1 fw-bold">E-shop</a>
-                    </div>
-
-                    <div class="col-md-4 order-2 order-md-1">
-                        
-                            <div class="input-group mb-3 d-flex align-items-center">
-                                <input type="text" class="form-control search" placeholder="Поиск товаров..." aria-label="Searching..." aria-describedby="button-addon2"
-                                name="search">
-                                <button class="btn btn-warning" type="button" id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </div> 
-
-                    </div>
-                    <div class=" col-6 col-md-4  d-flex align-items-center justify-content-end order-1 order-md-2">
-                        <a href="#" class="btn btn-warning me-3 position-relative btn-hedaer">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                0
-                              </span>
-                        </a>
-
-                        <button class="btn btn-warning  btn-hedaer position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                0
-                              </span>
-                        </button >
-
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasRightLabel">Корзина</h5>
-                              <button  type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                    </div>
-
-                </div>
-           </div>
         </div>
 
-    </div>
-</div>
+            
+        <div class="header-midle bg-white px-3 py-2">
+            <div class="conteiner-fluid">
+                 <div class="row">
+ 
+                     <div class="col-6 col-md-4 d-flex align-items-center order-0 order-md-0">
+                         <a href="index.html" class="header-logo h1 fw-bold">E-shop</a>
+                     </div>
+ 
+                     <div class="col-md-4 order-2 order-md-1">
+                         
+                             <div class="input-group mb-3 d-flex align-items-center">
+                                 <input type="text" class="form-control search" placeholder="Поиск товаров..." aria-label="Searching..." aria-describedby="button-addon2"
+                                 name="search">
+                                 <button class="btn btn-warning" type="button" id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                             </div> 
+ 
+                     </div>
+                     <div class=" col-6 col-md-4  d-flex align-items-center justify-content-end order-1 order-md-2">
+                         <a href="#" class="btn btn-warning me-3 position-relative btn-hedaer">
+                             <i class="fa-solid fa-thumbs-up"></i>
+                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                 0
+                               </span>
+                         </a>
+ 
+                         <button class="btn btn-warning  btn-hedaer position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                             <i class="fa-solid fa-basket-shopping"></i>
+                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                 0
+                               </span>
+                         </button >
+ 
+                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                             <div class="offcanvas-header">
+                               <h5 class="offcanvas-title" id="offcanvasRightLabel">Корзина</h5>
+                               <button  type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                             </div>
+                             <div class="offcanvas-body">
+                     </div>
+ 
+                 </div>
+            </div>
+         </div>  
+        </header> <! -- Header top  ->
+        <div class="header-bottom sticky-top">
+        <nav class="navbar navbar-expand-md bg-dark  px-3 " data-bs-theme="dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+        
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" aria-current="page" href="#">Домой</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Товары</a>
+                    </li>
+                    <li class="nav-item" active>
+                      <a class="nav-link" aria-disabled="true" href="#">О магазине</a>
+                    </li>
+              </div>
+            </div>
+          </nav>
+        </div>
 
-        <main class="main">main</main>
+        
+
+
+
+
+
+
+  
+
+        <main class="main">
+        </main>
 
         <footer class="footer">footer</footer>
 
